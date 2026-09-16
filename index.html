@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body class="bg-stone-100">
+    <header class="w-full bg-slate-800 shadow-md">
+      <div class="navbar shadow-sm">
+        <div class="flex-1">
+          <a class="btn btn-ghost text-xl text-white">Bookly</a>
+        </div>
+
+        <div class="flex gap-2">
+          <input
+            type="text"
+            placeholder="Search"
+            class="input w-24 md:w-auto"
+          />
+          <div class="dropdown dropdown-end">
+            <div
+              tabindex="0"
+              role="button"
+              class="btn btn-ghost btn-circle avatar"
+            >
+              <div class="w-10 rounded-full">
+                <img
+                  alt="Tailwind CSS Navbar component"
+                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+                />
+              </div>
+            </div>
+            <ul
+              tabindex="-1"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            >
+              <li>
+                <a class="justify-between">
+                  Profile
+                  <span class="badge">New</span>
+                </a>
+              </li>
+              <li><a>Settings</a></li>
+              <li><a>Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <h1 class="text-center text-3xl font-bold mt-8 m-15">Warenkorb</h1>
+
+    <section>
+      <div class="overflow-x-auto">
+        <table class="table">
+          
+          <thead>
+            <tr>
+              <th></th>
+              <th>Buch</th>
+              <th>Anzahl</th>
+              <th>Gesamt</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr>
+              <th>1</th>
+              <td>Tintenherz</td>
+              <td>1</td>
+              <td>12.99€</td>
+              <td>
+                <button class="btn btn-soft">🗑️</button>
+              </td>
+            </tr>
+            
+            <tr>
+              <th>2</th>
+              <td>Die unendliche Geschichte</td>
+              <td>1</td>
+              <td>11.90€</td>
+              <td>
+                <button  class="btn btn-soft">🗑️</button>
+              </td>
+            </tr>
+            
+
+            <tr>
+              <th>3</th>
+              <td>Eine Geschichte voller Magie</td>
+              <td>1</td>
+              <td>15.90€</td>
+              <td>
+                <button    class="btn btn-soft">🗑️</button>
+              </td>
+            </tr>
+            <tr>
+              <th></th>
+              <td>Gesamt</td>
+              <td>3</td>
+              <td>22.50€</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-books py-10">
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto px-4"
+      >
+        <div class="card bg-base-100 shadow-sm">
+          <figure
+            class="h-80 bg-cover bg-center"
+            style="
+              background-image: url(&quot;https://covers.openlibrary.org/b/isbn/9783551552006-L.jpg&quot;);
+            "
+          ></figure>
+
+          <div class="card-body">
+            <h2 class="card-title">Harry Potter und der Stein der Weisen</h2>
+            <p>J. K. Rowling</p>
+            <div class="card-actions flex justify-between">
+<button id ="success" class="btn btn-success">Hinzufügen</button>
+<button class="btn btn-warning">19,99 €</button>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-base-100 shadow-sm">
+          <figure
+            class="h-80 bg-cover bg-center"
+            style="
+              background-image: url(&quot;https://covers.openlibrary.org/b/isbn/9783551551689-L.jpg&quot;);
+            "
+          ></figure>
+
+          <div class="card-body">
+            <h2 class="card-title">
+              Harry Potter und die Kammer des Schreckens
+            </h2>
+            <p>J. K. Rowling</p>
+            <div class="card-actions flex justify-between">
+<button id ="success" class="btn btn-success">Hinzufügen</button>
+<button class="btn btn-warning">19,99 €</button>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-base-100 shadow-sm">
+          <figure
+            class="h-80 bg-cover bg-center"
+            style="
+              background-image: url(&quot;https://covers.openlibrary.org/b/isbn/9783608987027-L.jpg&quot;);
+            "
+          ></figure>
+
+          <div class="card-body">
+            <h2 class="card-title">Der Herr der Ringe</h2>
+            <p>J. R. R. Tolkien</p>
+
+            <div class="card-actions flex justify-between">
+<button id ="success" class="btn btn-success">Hinzufügen</button>
+<button class="btn btn-warning">19,99 €</button>
+
+            </div>
+
+            
+          </div>
+        </div>
+
+        
+    </section>
+  </body>
+</html>
